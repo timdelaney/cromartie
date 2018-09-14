@@ -43,7 +43,7 @@ public class Application implements CommandLineRunner {
     	//todo writing to stage
     	//todo pesimistic checks? Should I kick out bad rows and run anyway?
     	
-    /*	String sourceSchema = "test_db";
+    	/*String sourceSchema = "test_db";
     	String sourceTable = "tim_test";
     	String targetSchema = "test_db";
     	String targetTable = "tgt_timtest_hist";
@@ -54,10 +54,7 @@ public class Application implements CommandLineRunner {
     	ArrayList<String> keyColumns = new ArrayList<String>();
     	keyColumns.add("id");
     	String stimulate = "true";
-    	
-    	replicationService.runJob(sourceSchema, sourceTable, targetSchema, targetTable, targetType, targetEffectiveColumn,
-				targetExpirationColumn, sourceEffectiveColumn, keyColumns, stimulate);
-    	
-*/
+    	*/
+
     }
 }

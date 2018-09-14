@@ -18,13 +18,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ApplicationTest {
+public class Type2Test {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
 
     @Autowired
     ReplicationService replicationService;
+    
+    @Autowired
+    MetadataService metadataService;
    
 	@Test
 	public void type2() throws SQLException {
@@ -139,7 +142,7 @@ public class ApplicationTest {
 		//drop source table
 		jdbcTemplate.execute("DROP TABLE test_db.tim_test");
 		
-//drop target table
+		//drop target table
 		jdbcTemplate.execute("DROP TABLE test_db.tgt_timtest_hist");
 	}
 		
